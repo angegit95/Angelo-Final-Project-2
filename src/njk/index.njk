@@ -1,30 +1,41 @@
 {% extends '_templates/base.njk' %}
 
-{% block page_title %}Index page title{% endblock %}
-
-{% block page_description %}The index search description for this page goes here.{% endblock %}
-
 {% block content %}
 <div class="container">
-  <h1>Main headline here</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  <h2>Library books loop</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
-  <div class="row">
-    {% for book in library.books %}
-      <div class="col">
-        <img src="img/{{ book.slug }}.jpg" alt="" class="img-fluid">
-        <h3><a href="books/{{ book.slug }}.html">{{ book.title }}</a></h3>
-      </div>
-    {% endfor %}
-  </div>
-  <h2>Bookstores loop</h2>
-  <p>This loops through data that came from a Google Sheet example.</p>
-  <hr>
-  {% for store in bookstores.stores %}
-    <h3><a href="{{ store.url }}" target="_blank">{{ store.name }}</a></h3>
-    <p>{{ store.address}}, {{ store.city }}, {{ store.state }} {{ store.zip }}</p>
+  <p>What you hear is true. With vibrant entertainment, art and culture, inspiring cuisine and stunning outdoor experiences, Austin lets you create a soundtrack all your own. So take a look around, and put the Live Music Capital of the World® on your playlist.</p>
+  <a class="source"href="https://www.austintexas.org/" target="_blank">Source</a>
+</div> 
+<div class="row">
+  <div class="col-md-5 offset-md-1">
+    <h2>Landmarks</h2>
+    <p>Here in Austin, we have some of the best landmarks in the great state of Texas. Whether wou want to get active or dive into our rich history and politics, we've got just the thing for you!</p>
     <hr>
-  {% endfor %}
+  </div>
+  {% for landmarks in austin.landmarks %}
 </div>
+  {% for landmarks in austin.landmarks %}
+  <div class="col-sm-6">
+    <h3><a href="{{ slug.url }}" target="_blank">{{ landmarks.name }}</a></h3>
+    <p>{{ landmarks.established}}, {{ landmarks.location }}, {{ landmarks.activities }}</p>
+    <hr>
+  </div>
+  {% endfor %}
+  </div>
+ <div="col-sm-6"> 
+  <h2>Restaurants</h2>
+  <p>No matter what you are craving, Austin's great eateries are here to make sure your belly is full and your wallet is empty as you tour Cap City! Italian, Ameircan, Mexican and more options are available so you never have to eat the same thing twice when you're here.</p>
+  </div>
+  <hr>
+  {% for restaurants in restaurants.restaurants %}
+    <div class="col-sm-6">
+    <h3><a href="{{ slug.url }}" target="_blank">{{ landmarks.name }}</a></h3>
+    <p>{{ restaurants.name}}, {{ restaurants.address }}, {{ restaurants.category }}</p>
+    <hr>
+  </div>
+  {% endfor %}
+  </div> 
+</div>
+
 {% endblock %}
+
+<title>{% block page_title %}Welcome{% endblock %}</title>q

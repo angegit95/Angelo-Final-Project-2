@@ -6,9 +6,9 @@
       "name": "library"
     },
     {
-      "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
-      "type": "sheet",
-      "name": "bookstores"
+      "fileId": "1RSA9OBvjPBUa5GVF2ssPrSpdTdOjeNCiIPbHvbUWJ84",
+      "type": "doc",
+      "name": "restaurants"
     }
   ],
   "to_bake": [
@@ -18,6 +18,15 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+ 
+    {
+      "template": "bake-landmarks",
+      "data": "austin",
+      "array": "landmarks",
+      "slug": "slug",
+      "path": "landmark page"
     }
   ]
 }
+

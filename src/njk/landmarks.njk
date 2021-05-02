@@ -1,0 +1,17 @@
+{% extends '_templates/base.njk' %}
+
+{% block content %}
+<article class="container">
+  {% for landmarks in austin.landmarks %}
+    <h1>Landmarks</h1>
+  <p>Intro text here.</p>
+  </div>
+  <h2>Landmarks</h2>
+  <hr>
+    <h3><a href="{{ slug }}.html" target="_blank">{{ landmark.name }}</a></h3>
+    <p>{{ landmarks.established}}, {{ landmarks.location }}, {{ landmarks.actvities }} {{ landmarks.url }}</p>
+    <hr>
+  {% endfor %}
+</div>
+</article>
+{% endblock %}

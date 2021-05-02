@@ -24,3 +24,30 @@
 h3 {
   font-size: 1.5rem;
 }
+.source {
+  color: rgb(55, 202, 247)
+}
+
+.headline {
+  color:rgb(0, 0, 0)
+}
+
+.slug {
+  color:rgb(22, 123, 170)
+}
+
+.date {
+  color:rgb(0, 0, 0)
+}
+.jumbotron.banner {
+  background: url(../img/cmc-austin-dawn-20200614), no-repeat, center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-size: cover;
+  color: white;
+  padding-top: 7rem
+}
+.jumbotron {
+  margin-bottom: 30px;
+}
+
+
