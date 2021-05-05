@@ -8,18 +8,21 @@
 
 {% block content %}
   <article class="container">
+      <div class="col-sm-12 text-center">
+        <h5>{{ name }}</h5> 
+        <h6>{{ established }}</h6>
+        <hr>
+      </div>
     <div class="row">
-      <div class="col-sm-5">
-        <h3>{{ name }}</h1>
-        <img src="img/landmarks/{{ landmarks.slug }}.jpg" alt="landmark image" class="img-fluid">
-        <h5>{{ established }}</h5>
-        <h5>{{ location }}</h5>
-        <h5>{{ activities }}</h5>
-        <h5>{{ url }}</h5>
+       <div class="col-sm-5">
+        <img src="../img/landmarks/{{ image }}" alt="landmark image" class="img-fluid">
+        <p>{{ location }}</p>
+        <p>{{ activities }}</p>
+        <a class="lmsite"href="{{ url }}" target="_blank">Visit Site</a>
         <hr class="d-sm-none">
       </div>
       <div class="col-sm-7">
-        <h6>{{ description }}</h6>
+        <h6>{{ description | safe }}</h6>
       </div>
     </div>
   </article>

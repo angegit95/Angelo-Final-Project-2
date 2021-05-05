@@ -71,6 +71,24 @@
       "address": "2400 E Oltorf St #1A, Austin, TX 78741",
       "category": "Pan-Asian",
       "image": "888.jpg"
+    },
+    {
+      "name": "Mandola's",
+      "address": "4700 W Guadalupe St #12, Austin, TX 78751",
+      "category": "Italian",
+      "image": "mandolas.jpg"
+    },
+    {
+      "name": "Clay Pit",
+      "address": "1601 Guadalupe St, Austin, TX 78701",
+      "category": "Indian",
+      "image": "claypit.jpg"
+    },
+    {
+      "name": "Julio's",
+      "address": "4230 Duval St, Austin, TX 78751",
+      "category": "Tex-Mex",
+      "image": "julios.jpg"
     }
   ]
 }
