@@ -10,12 +10,10 @@
   <div class="row">
     {% for murals in austin.murals %}
     <div class="col-sm-4 col-lg-3">
-      <div class="text-black bg-light mb-4" style="max width: 18rem:">
+      <div class="text-white bg-info mb-4" style="max width: 18rem:">
             <h5 class="header">{{ murals.name }}</h5>
         <div class="body">
           <h6 class="maddy">{{ murals.address }}</h6>
-          <p class="mlat">Latitude: {{ murals.latitude }}</p>
-          <p class="mlong">Longitude: {{ murals.longitude }}</p>
            <a class="mloc"href="{{ murals.map_location }}" target="_blank">Map Location</a>
           <hr>
         </div>

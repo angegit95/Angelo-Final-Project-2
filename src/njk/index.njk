@@ -15,27 +15,11 @@
   {% for landmark in austin.landmarks %}
   <div class="col-md-5 offset-md-1">
     <h3><a href="landmarks/{{ landmark.slug }}.html">{{ landmark.name }}</a></h3>
+    <img src="../img/landmarks/{{ landmark.slug }}.jpg" alt="landmark image" class="img-fluid">
     <p>{{ landmark.established}}, {{ landmark.location }}, {{ landmark.activities }}</p>
     <hr>
   </div>
   {% endfor %}
-  
- <div class="row">
-    <div class="col-md-10 offset-md-1">
-      <h2>Restaurants</h2>
-      <p>No matter what you are craving, Austin's great eateries are here to make sure your belly is full and your wallet is empty as you tour Cap City! Italian, Ameircan, Mexican and more options are available so you never have to eat the same thing twice when you're here.</p>
-      <hr>
-    </div>
-  </div>
-  <div class="row">
-  {% for restaurants in restaurants.restaurants %}
-  <div class="col-md-5 offset-md-1">
-    <h3><a href="{{ slug.url }}.html">{{ restaurants.name }}</a></h3>
-    <p>{{ restaurants.name}}, {{ restaurants.address }}, {{ restaurants.category }}</p>
-    <hr>
-  </div>
-  {% endfor %}
-  </div> 
 </div>
 {% endblock %}
 
